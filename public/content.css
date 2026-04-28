@@ -1,0 +1,120 @@
+body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      border-bottom: 1px solid #ddd;
+      background-color: #03131a;
+    }
+    #logo{
+        height: 45px;
+        width: 70px;
+    }
+    .txt{
+        color: rgba(255, 255, 255, 0.5);;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    nav{
+       margin-right: 200px;
+    }
+    nav a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      font-size: 19px;
+    }
+    .nav-txt{
+        position: relative;
+        left: 50px;
+    }
+    .nav-txt:hover{
+        transform: scale(1.1,1.1);
+        color: gray;
+    }
+    button a{
+        color:#03131a; 
+        font-weight: bold;
+    }
+   button{
+    padding: 4px;
+    position:relative;
+    left: 180px;
+    font-size: 29px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:aliceblue;
+    transition: all 0.5s ease;
+   }
+   button:hover{
+    transform: scale(1.1,1.1);
+   }    
+
+    .container {
+      width: 90%;
+      max-width: 600px;
+      margin: 50px auto;
+      background: #fff;
+      padding: 30px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    label {
+      margin-top: 15px;
+      font-weight: bold;
+    }
+
+    input, textarea {
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 100px;
+    }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px;
+      position: relative;
+      left: 3px;
+      background-color: #ff6600;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: #e65c00;
+    }
+
+    .info {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #666;
+    }

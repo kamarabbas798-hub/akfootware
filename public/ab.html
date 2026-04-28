@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login & Signup with Single Image</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0; padding: 0;
+      font-family: 'Arial', sans-serif;
+    }
+    body, html {
+      height: 100%;
+      background: #f0f0f0;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    .logo{
+      height: 45px;
+    }
+    .logo img{
+        height: 52px;
+        margin-top: 20px;
+        margin-left: 610px;
+    }
+    .logo p{
+      text-align: center;
+      font-size: 22px;
+      font-weight: bold;
+      color:gray;
+    }
+    .container {
+      width: 100%;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 50px;
+    }
+    .slider-box {
+      width: 900px;
+      height: 500px;
+      background: #fff;
+      box-shadow: 5px 10px 30px rgba(0,0,0,0.5);
+      border-radius: 10px;
+      display: flex;
+      overflow: hidden;
+      position: relative;
+    }
+    /* Left side single image */
+    .image-container {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .image-container img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    /* Right side forms */
+    .form-container {
+      width: 50%;
+      padding: 40px 60px;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items:start;
+    }
+    .form-wrapper {
+      width: 200%;
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    form {
+      width: 50%;
+      height: 270px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding-left: 60px;
+      padding-right: 60px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-weight: 600;
+      color: #333;
+    }
+    input {
+      margin-bottom: 15px;
+      padding: 12px;
+      font-size: 16px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    input:focus {
+      border-color: #4caf50;
+    }
+    button {
+      padding: 12px;
+      font-size: 16px;
+      border: none;
+      background: #4caf50;
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .toggle-link {
+      margin-bottom: 20px;
+      color: #007bff;
+      cursor: pointer;
+      font-size: 14px;
+      user-select: none;
+      text-align: center;
+      display: block;
+      text-decoration: underline;
+      padding-top: 20px;
+    }
+    
+  </style>
+</head>
+<body>
+<div class="logo">
+  <img src="ak_logo.png" alt="">
+  <p>FOOTWARE</p>
+</div>
+<div class="container">
+  <div class="slider-box">
+
+    <div class="image-container">
+      <img src="pho2.png" alt="Static Left Side Image"/>
+    </div>
+    
+    <div class="form-container">
+      <div class="form-wrapper" id="formWrapper">
+
+        <!-- LOGIN FORM -->
+        <form id="loginForm">
+          <h2>Login</h2>
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Login</button>
+          <span class="toggle-link" onclick="toggleForm()">Don't have an account? Sign up</span>
+        </form>
+        
+        <!-- SIGNUP FORM -->
+        <form id="signupForm">
+          <h2>Sign Up</h2>
+          <input type="text" placeholder="Full Name" required />
+          <input type="email" placeholder="Email" required />
+          <input type="password" placeholder="Password" required />
+          <button type="submit">Sign Up</button>
+           <span class="toggle-link" onclick="toggleForm()">Already have an account? Login</span>
+        </form>
+
+      </div>
+    </div>
+  
+  </div>
+</div>
+
+<script>
+  const formWrapper = document.getElementById('formWrapper');
+  let isSignup = false;
+
+  function toggleForm() {
+    isSignup = !isSignup;
+    if (isSignup) {
+      formWrapper.style.transform = 'translateX(-50%)';
+    } else {
+      formWrapper.style.transform = 'translateX(0)';
+    }
+  }
+</script>
+
+</body>
+</html>

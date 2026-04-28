@@ -1,0 +1,111 @@
+ body {
+      font-family: Arial, sans-serif;
+      /* background: #f2f2f2; */
+      margin: 0;
+      padding: 0;
+    }
+
+     header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      border-bottom: 1px solid #ddd;
+      background-color:#03131a;
+    }
+    /* .logo {
+      font-size: 32px;
+      font-weight: bold;
+    } */
+    #logo{
+        height: 45px;
+        width: 70px;
+    }
+     .txt{
+        color: rgba(255, 255, 255, 0.5);;
+        font-size: 19px;
+        font-weight: bold;
+    }
+    nav{
+       margin-right: 180px;
+    }
+    nav a {
+      margin: 0 30px;
+      text-decoration: none;
+      color: aliceblue;
+      font-weight: bold;
+      transition: all 0.3s ease;
+      font-size: 19px;
+    }
+    .nav-txt{
+        position: relative;
+        left: 50px;
+    }
+    .nav-txt:hover{
+        transform: scale(1.1,1.1);
+        color: gray;
+    }
+
+    #btn-log a{
+        color:#03131a; 
+        font-weight: bold;
+    }
+    #btn-log{
+    padding: 5px;
+    position:relative;
+    left: 180px;
+    font-size: 29px;
+    border: 1px solid black;
+    border-radius: 20px;
+    background-color:aliceblue;
+    transition: all 0.5s ease;
+    }
+    #btn-log:hover{
+      transform: scale(1.1,1.1);
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 25px auto;
+      /* background: #fff; */
+      padding: 30px;
+      
+    }
+
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+
+    .review {
+      background: #f9f9f9;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+      padding: 15px;
+      border-left: 5px solid darkblue;
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 15px;
+    }
+
+   
+
+    .review-content {
+      flex: 1;
+    }
+
+    .review h3 {
+      margin: 0 0 5px 0;
+      color: #333;
+    }
+
+    .review p {
+      margin: 5px 0;
+      color: #555;
+    }
+
+    form {
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+    }
